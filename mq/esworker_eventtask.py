@@ -60,7 +60,7 @@ def keyMapping(aDict):
             if k == 'sourceip':
                 returndict[u'details']['sourceipaddress'] = v
 
-            if k == 'facility':
+            if k in ('facility', 'source'):
                 returndict[u'source'] = v
 
             if k in ('message', 'summary'):
